@@ -1,0 +1,118 @@
+/* header */
+.main-container {
+  max-width: 80vw; /* viewport width= vw ; no caso 80vw = 80% da largura do viewport*/
+  height: 100vh; /* viewport height = vh */
+  margin-left: 320px;
+  margin-right: 56px;
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: #121212;
+}
+
+.header-navigation .navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-navigation .navigation .arrow-left {
+  margin-right: 1.25rem; /* rem = unidade relativa */
+}
+
+.arrow-left,
+.arrow-right {
+  /* quando com virgula, diz "quero estilizar os dois"; sem virgula é porque um está dentro do outro*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: var(--bg-icon);
+  background-color: var(--bg-arrow-color);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.header-login {
+  display: flex;
+  align-items: center;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  width: 364 px;
+  height: 48px;
+  margin-left: 20px;
+  margin-right: auto;
+  background-color: #242424;
+  border-radius: 500px;
+  border: 1px solid transparent;
+}
+
+.header-search img {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+}
+
+.header-search input {
+  background-color: transparent;
+  border: none;
+  padding: 0px 100px 0 12px;
+  color: #fff;
+  text-overflow: ellipsis; /* os caracteres vao ficando pra trás pra nao vazar nem cortar */
+  overflow: hidden; /* tres pontinhos */
+  white-space: nowrap;
+  outline: none; /* tirando a barrinha que aparece ao clicar no input*/
+}
+
+.header-login .subscribe {
+  color: #a7a7a7;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: transparent;
+  margin-right: 32px;
+}
+
+.header-login .login {
+  width: 100px;
+  height: 48px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 40px;
+}
+
+.playlist-container {
+    height: 68vh;
+    padding-top: 12px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #121212;
+  }
+  
+  .playlist {
+    margin: 24px;
+  }
+  
+  /* .playlist #greeting {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  } */
+  
+  .playlist .navigate {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+  }

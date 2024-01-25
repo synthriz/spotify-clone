@@ -1,0 +1,10 @@
+/* CRIANDO VARIAVEIS PARA FACILITAR A MANUTENÇÃO
+só é necessário declarar var(variavel) no css
+exemplo: font-family: var(--font--dm-sans) */
+:root{
+    /* fontes */
+    --font--dm-sans: "DM Sans", sans-serif;
+    /* cores */
+    --bg-icon: #131313;
+    --bg-arrow-color: rgba
+}

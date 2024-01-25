@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify Imersão</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./src/styles/vars.css" />
+    <!--colocar as variáveis antes do arquivo de estilização-->
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/sidebar-footer.css" />
+    <link rel="stylesheet" href="./src/styles/main-content.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
@@ -19,13 +22,15 @@
       crossorigin="anonymous"
     />
   </head>
+
+<!-- aqui começa a sidebar à esquerda! -->
   <body>
     <div class="sidebar">
       <nav class="sidebar_navigation">
         <div class="logo">
           <a href="">
             <img
-              src="./assets/icons/logo-spotify-verde.png"
+              src="./src/assets/icons/logo-spotify-verde.png"
               alt="logo do Spotify"
             />
           </a>
@@ -78,6 +83,54 @@
         </div>
       </div>
     </div>
+
+<!-- aqui começa a parte da search bar e playlists! -->
+    <main>
+      <div class="main-container">
+        <!-- main é recurso bom para acessibilidade, a tecnologia detecta o conteudo principal para assistir o usuario-->
+        <nav class="header-navigation">
+          <div class="navigation">
+            <button class="arrow-left">
+              <img
+                src="./src/assets/icons/small-left.png"
+                alt="Seta Esquerda"
+              />
+            </button>
+            <button class="arrow-right">
+              <img
+                src="./src/assets/icons/small-right.png"
+                alt="Seta Direita"
+              />
+            </button>
+          </div>
+          <div class="header-search">
+            <img src="./src/assets/icons/search.png" alt="" />
+            <!-- alt vazio pois nao tem valor de imagem/conteúdo -->
+            <input
+              id="search-input"
+              type="text"
+              maxlength="800"
+              placeholder="O que você quer ouvir?"
+            />
+            <!-- maxlenght é quantidade maxima de caracteres que da pra colocar no input-->
+          </div>
+          <div class="header-login">
+            <button class="subscribe">Inscreva-se</button>
+            <button class="login">Entrar</button>
+          </div>
+        </nav>
+        <div class="playlist-container">
+          <div id="result-playlists">
+            <div class="playlist">
+              <!-- <h1 id="greeting">Boa tarde</h1> -->
+              <h2 class="navigate">Navegar por todas as seções</h2>
+            </div>
+          </div>
+      </div>
+      </div>
+    </main>
+
+<!-- aqui começa o footer de "teste o premium!" -->
     <footer class="disclaimer-premium">
       <div class="text">
         <p class="disclaimer-premium-title">Testar o Premium de graça</p>

@@ -1,6 +1,6 @@
 body {
   background-color: black;
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font--dm-sans) /* declarado do mesmo jeito que no vars.css */
 }
 
 .sidebar {
@@ -95,6 +95,7 @@ body {
 
 .library .library-content .fa-plus {
   margin: 20px 16px;
+  cursor: pointer;
 }
 
 .section-playlist {
