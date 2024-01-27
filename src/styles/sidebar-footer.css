@@ -1,6 +1,7 @@
 body {
   background-color: black;
-  font-family: var(--font--dm-sans) /* declarado do mesmo jeito que no vars.css */
+  font-family: var(--font--dm-sans); /* declarado do mesmo jeito que no vars.css */
+  overflow: hidden;
 }
 
 .sidebar {
@@ -41,6 +42,9 @@ body {
   font-size: 14px;
 }
 
+.fa-search, .fa-home{
+  margin-right: 8px;
+}
 .hover:hover {
   color: #fff;
 }
@@ -81,12 +85,20 @@ body {
   padding: 20px 16px;
 }
 
+.library .library-button:hover {
+  color: #fff;
+}
+
 .library .library-button .fa {
   font-size: 15px;
   font-weight: 300;
   color: #b3b3b3;
   margin-right: 5px;
   padding-right: 8px;
+}
+
+.library .library-button .fa:hover {
+  color: #fff;
 }
 
 /* .library-text {
@@ -96,6 +108,9 @@ body {
 .library .library-content .fa-plus {
   margin: 20px 16px;
   cursor: pointer;
+}
+.library .library-content .fa-plus:hover {
+  color: #fff;
 }
 
 .section-playlist {
@@ -147,6 +162,10 @@ body {
   margin-top: 8px;
 }
 
+.section-playlist-button:hover {
+  background-color: #ffffffb6;
+}
+
 .sidebar .cookies {
   display: flex;
   flex-wrap: wrap;
@@ -166,7 +185,7 @@ body {
 }
 
 .creator {
-  margin: 18px 18px;
+  margin: 19px 18px;
 }
 
 .creator a{
@@ -178,6 +197,19 @@ body {
 .language-button {
   align-items: center;
   background-color: transparent;
+  border: 1px solid #878787;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  width: 170px;
+  margin: 8px;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.language-button:hover {
+  align-items: center;
+  background-color: #ffffff0b;
   border: 1px solid #878787;
   color: #fff;
   font-weight: bold;
@@ -205,7 +237,7 @@ body {
 .disclaimer-premium .disclaimer-premium-title {
   color: #ffffff;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 14px;
   margin-bottom: 10px;
 }
@@ -219,6 +251,18 @@ body {
 .disclaimer-premium button {
   background-color: #ffffff;
   color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.disclaimer-premium button:hover {
+  background-color: #ffffffb6;
+  color: #000;
   font-size: 16px;
   font-weight: bold;
   padding: 14px 30px;

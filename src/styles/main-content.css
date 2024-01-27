@@ -81,8 +81,12 @@
   font-weight: 700;
   background-color: transparent;
   margin-right: 32px;
+  transition: 0.3s;
 }
 
+.subscribe:hover {
+  color: #fff
+}
 .header-login .login {
   width: 100px;
   height: 48px;
@@ -90,6 +94,12 @@
   font-size: 16px;
   font-weight: 700;
   border-radius: 40px;
+  transition: 0.3s;
+}
+
+.header-login .login:hover {
+  background-color: #1db954;
+  color: #fff
 }
 
 .playlist-container {
