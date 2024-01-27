@@ -1,0 +1,6 @@
+@media screen and (max-width: 1015px) { 
+    .offer-list-item {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* é como se dissesse "dentro dessa resolução, eu quero que aconteça x coisa"  */
