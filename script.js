@@ -34,3 +34,8 @@ document.addEventListener("input", function () {
   }
   requestApi(searchTerm);
 });
+
+//observações: 
+// npm install -g json-server@0.17.4
+// json-server --watch api-artists/artists.json
+// verificar url: http://localhost:3000/artists

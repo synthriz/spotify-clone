@@ -118,7 +118,7 @@
 }
 
 .offer-scroll-container {
-  max-height: 43vh;
+  max-height: 52vh;
   margin: 24px;
   overflow-y: auto;
 }
@@ -134,10 +134,10 @@
 .offer-list-item {
   display: grid;
   justify-items: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 16px;
   gap: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 5px;
 
   /* CODIGO COM JS CALCULANDO OS CARDS POR COLUNA */
   display: grid;
@@ -148,7 +148,7 @@
 
 .cards {
   position: relative;
-  width: 220px;
+  width: 200px;
   height: 200px;
   overflow: hidden;
   border-radius: 8px;
